@@ -1,4 +1,4 @@
-package cn.nean;
+package cn.nean.order;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
