@@ -1,0 +1,18 @@
+#服务端口号 8010
+server:
+  port: 8020
+spring:
+  #服务名称
+  name: points-service
+  #数据库配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/cloud-points?characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#日志级别、格式
+logging:
+  level:
+    cn.aioz: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
