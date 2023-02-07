@@ -17,9 +17,9 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cloud" options="-parameters" />
       <module name="feign" options="-parameters --add-modules java.base" />
-      <module name="model" options="-parameters --add-modules java.base" />
+      <module name="model" options="-parameters" />
       <module name="order-service" options="-parameters --add-modules java.base" />
-      <module name="points-service" options="-parameters" />
+      <module name="points-service" options="-parameters --add-modules java.base" />
       <module name="services" options="-parameters" />
     </option>
   </component>

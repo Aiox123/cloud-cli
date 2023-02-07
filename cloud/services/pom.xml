@@ -24,6 +24,12 @@
         </dependency>
 
         <dependency>
+            <groupId>cn.nean</groupId>
+            <artifactId>feign</artifactId>
+            <version>CA.2023.2.5</version>
+        </dependency>
+
+        <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
             <exclusions>

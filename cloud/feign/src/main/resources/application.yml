@@ -1,0 +1,3 @@
+logging:
+  level:
+    cn.nean.feign.points: debug
