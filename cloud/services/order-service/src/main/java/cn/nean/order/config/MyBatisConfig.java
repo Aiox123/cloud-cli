@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * @author nean
  */
-@MapperScan("cn.nean.mapper")
+@MapperScan("cn.nean.order.mapper")
 @Configuration
 public class MyBatisConfig {
 

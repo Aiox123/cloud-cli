@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.nean.order.mapper.OrderMapper">
+
+    <select id="queryOrderById" resultType="cn.nean.model.order.pojo.Order">
+        SELECT
+            *
+        FROM
+            `order`
+        WHERE
+            id = #{id}
+    </select>
+</mapper>
