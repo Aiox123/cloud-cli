@@ -2,6 +2,13 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.nean.points.mapper.PointsMapper">
 
+    <update id="increasePoints">
+        UPDATE points
+        SET points = points + #{points}
+        WHERE
+            user_id = #{userId}
+    </update>
+
 
     <select id="queryPointsById" resultType="cn.nean.model.points.pojo.Points">
         SELECT

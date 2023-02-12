@@ -4,16 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29a07c0e-1f90-4c34-acdf-c78505e7a59e" name="Changes" comment="MyBatis second Fix">
-      <change afterPath="$PROJECT_DIR$/cloud/feign/src/main/java/cn/nean/feign/points/PointsFeignClient.java" afterDir="false" />
+    <list default="true" id="29a07c0e-1f90-4c34-acdf-c78505e7a59e" name="Changes" comment="OpenFeign first conform">
+      <change afterPath="$PROJECT_DIR$/cloud/services/stock-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1835ce50-1d38-49df-940e-434fb4568471.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1835ce50-1d38-49df-940e-434fb4568471.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/59cf1cc5-d94e-48e4-8837-197afb52a9a2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/59cf1cc5-d94e-48e4-8837-197afb52a9a2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud/feign/src/main/java/cn/nean/feign/points/PointsClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/feign/src/main/java/cn/nean/feign/points/PointsFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/feign/src/main/java/cn/nean/feign/points/PointsFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/feign/src/main/java/cn/nean/feign/stock/StockFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/feign/src/main/java/cn/nean/feign/stock/StockFeignClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud/services/order-service/src/main/java/cn/nean/order/OrderApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/services/order-service/src/main/java/cn/nean/order/OrderApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud/services/order-service/src/main/java/cn/nean/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/services/order-service/src/main/java/cn/nean/order/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud/services/order-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/services/order-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud/services/points-service/src/main/java/cn/nean/points/config/MyBatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/services/points-service/src/main/java/cn/nean/points/config/MyBatisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud/services/points-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/services/points-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/services/points-service/src/main/java/cn/nean/points/controller/PointsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/services/points-service/src/main/java/cn/nean/points/controller/PointsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/services/points-service/src/main/java/cn/nean/points/mapper/PointsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/services/points-service/src/main/java/cn/nean/points/mapper/PointsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/services/points-service/src/main/resources/mapper/PointsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/services/points-service/src/main/resources/mapper/PointsMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud/services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/services/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,10 +73,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
+    "jdk.selected.JAVA_MODULE": "11",
     "last_opened_file_path": "C:/Users/86185/Desktop/cloud-cli/cloud-cli",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "spring.configuration.checksum": "51a6f0ceaa649231bfc5e04ba2e0efa2"
+    "spring.configuration.checksum": "310d648c205d62097091fab067971b39"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -80,6 +91,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Java-code-github\cloud-cli\cloud\services\points-service\src\main\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.nean.stock.config" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -88,7 +102,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PointsApp">
+  <component name="RunManager" selected="Spring Boot.OrderApp">
     <configuration default="true" type="lua.app" factoryName="Lua Application">
       <option name="program" value="lua.exe" />
       <option name="file" value="" />
@@ -132,9 +146,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StockApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="stock-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.nean.stock.StockApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.nean.stock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.OrderApp" />
+        <item itemvalue="Spring Boot.StockApp" />
         <item itemvalue="Spring Boot.PointsApp" />
       </list>
     </recent_temporary>
@@ -152,7 +180,12 @@
       <workItem from="1675675725311" duration="813000" />
       <workItem from="1675677496143" duration="73000" />
       <workItem from="1675680282464" duration="20000" />
-      <workItem from="1675747257348" duration="4392000" />
+      <workItem from="1675747257348" duration="7098000" />
+      <workItem from="1675766618319" duration="8000" />
+      <workItem from="1676014669577" duration="70000" />
+      <workItem from="1676015022552" duration="16000" />
+      <workItem from="1676015124660" duration="25000" />
+      <workItem from="1676194852669" duration="5691000" />
     </task>
     <task id="LOCAL-00001" summary="CloudAlibaba_Cli">
       <created>1675587602595</created>
@@ -182,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675749554044</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="OpenFeign first conform">
+      <created>1675751841053</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675751841053</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +244,7 @@
     <MESSAGE value="Nacos fix perfect" />
     <MESSAGE value="MyBatis first Fix" />
     <MESSAGE value="MyBatis second Fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="MyBatis second Fix" />
+    <MESSAGE value="OpenFeign first conform" />
+    <option name="LAST_COMMIT_MESSAGE" value="OpenFeign first conform" />
   </component>
 </project>

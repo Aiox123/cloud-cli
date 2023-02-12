@@ -1,7 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="@localhost">
+<dataSource name="@localhost [3]">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.40">
-    <root id="1"/>
+    <root id="1">
+      <DefaultCasing>lower/lower</DefaultCasing>
+      <DefaultEngine>InnoDB</DefaultEngine>
+      <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
+      <Grants>|root||root|localhost|ALTER|G
+|root||root|localhost|ALTER ROUTINE|G
+|root||root|localhost|APPLICATION_PASSWORD_ADMIN|G
+|root||root|localhost|AUDIT_ADMIN|G
+|root||mysql.session|localhost|BACKUP_ADMIN|G
+|root||root|localhost|BACKUP_ADMIN|G
+|root||root|localhost|BINLOG_ADMIN|G
+|root||root|localhost|BINLOG_ENCRYPTION_ADMIN|G
+|root||mysql.session|localhost|CLONE_ADMIN|G
+|root||root|localhost|CLONE_ADMIN|G
+|root||mysql.session|localhost|CONNECTION_ADMIN|G
+|root||root|localhost|CONNECTION_ADMIN|G
+|root||root|localhost|CREATE|G
+|root||root|localhost|CREATE ROLE|G
+|root||root|localhost|CREATE ROUTINE|G
+|root||root|localhost|CREATE TABLESPACE|G
+|root||root|localhost|CREATE TEMPORARY TABLES|G
+|root||root|localhost|CREATE USER|G
+|root||root|localhost|CREATE VIEW|G
+|root||root|localhost|DELETE|G
+|root||root|localhost|DROP|G
+|root||root|localhost|DROP ROLE|G
+|root||root|localhost|ENCRYPTION_KEY_ADMIN|G
+|root||root|localhost|EVENT|G
+|root||root|localhost|EXECUTE|G
+|root||root|localhost|FILE|G
+|root||root|localhost|FLUSH_OPTIMIZER_COSTS|G
+|root||root|localhost|FLUSH_STATUS|G
+|root||root|localhost|FLUSH_TABLES|G
+|root||root|localhost|FLUSH_USER_RESOURCES|G
+|root||root|localhost|GROUP_REPLICATION_ADMIN|G
+|root||root|localhost|INDEX|G
+|root||root|localhost|INNODB_REDO_LOG_ARCHIVE|G
+|root||root|localhost|INNODB_REDO_LOG_ENABLE|G
+|root||root|localhost|INSERT|G
+|root||root|localhost|LOCK TABLES|G
+|root||mysql.session|localhost|PERSIST_RO_VARIABLES_ADMIN|G
+|root||root|localhost|PERSIST_RO_VARIABLES_ADMIN|G
+|root||root|localhost|PROCESS|G
+|root||root|localhost|REFERENCES|G
+|root||root|localhost|RELOAD|G
+|root||root|localhost|REPLICATION CLIENT|G
+|root||root|localhost|REPLICATION SLAVE|G
+|root||root|localhost|REPLICATION_APPLIER|G
+|root||root|localhost|REPLICATION_SLAVE_ADMIN|G
+|root||root|localhost|RESOURCE_GROUP_ADMIN|G
+|root||root|localhost|RESOURCE_GROUP_USER|G
+|root||root|localhost|ROLE_ADMIN|G
+|root||mysql.infoschema|localhost|SELECT|G
+|root||root|localhost|SELECT|G
+|root||root|localhost|SERVICE_CONNECTION_ADMIN|G
+|root||mysql.session|localhost|SESSION_VARIABLES_ADMIN|G
+|root||root|localhost|SESSION_VARIABLES_ADMIN|G
+|root||root|localhost|SET_USER_ID|G
+|root||root|localhost|SHOW DATABASES|G
+|root||root|localhost|SHOW VIEW|G
+|root||root|localhost|SHOW_ROUTINE|G
+|root||mysql.session|localhost|SHUTDOWN|G
+|root||root|localhost|SHUTDOWN|G
+|root||mysql.session|localhost|SUPER|G
+|root||root|localhost|SUPER|G
+|root||mysql.infoschema|localhost|SYSTEM_USER|G
+|root||mysql.session|localhost|SYSTEM_USER|G
+|root||mysql.sys|localhost|SYSTEM_USER|G
+|root||root|localhost|SYSTEM_USER|G
+|root||mysql.session|localhost|SYSTEM_VARIABLES_ADMIN|G
+|root||root|localhost|SYSTEM_VARIABLES_ADMIN|G
+|root||root|localhost|TABLE_ENCRYPTION_ADMIN|G
+|root||root|localhost|TRIGGER|G
+|root||root|localhost|UPDATE|G
+|root||root|localhost|XA_RECOVER_ADMIN|G
+|root||root|localhost|grant option|G
+performance_schema|schema||mysql.session|localhost|SELECT|G
+sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
+      <ServerVersion>8.0.26</ServerVersion>
+    </root>
     <collation id="2" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
     </collation>
@@ -869,26 +948,26 @@
     <schema id="276" parent="1" name="cloud-points">
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
-    <schema id="277" parent="1" name="information_schema">
+    <schema id="277" parent="1" name="cloud-stock">
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </schema>
+    <schema id="278" parent="1" name="information_schema">
       <CollationName>utf8_general_ci</CollationName>
     </schema>
-    <schema id="278" parent="1" name="library">
+    <schema id="279" parent="1" name="library">
       <CollationName>utf8_general_ci</CollationName>
     </schema>
-    <schema id="279" parent="1" name="mall">
+    <schema id="280" parent="1" name="mall">
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
-    <schema id="280" parent="1" name="mini_mall">
+    <schema id="281" parent="1" name="mini_mall">
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
-    <schema id="281" parent="1" name="miniboss">
+    <schema id="282" parent="1" name="miniboss">
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
-    <schema id="282" parent="1" name="mysql">
+    <schema id="283" parent="1" name="mysql">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="283" parent="1" name="nean_mall">
-      <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <schema id="284" parent="1" name="performance_schema">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
@@ -903,78 +982,60 @@
       <CollationName>utf8mb4_unicode_ci</CollationName>
     </schema>
     <user id="288" parent="1" name="mysql.infoschema">
+      <CanLogin>0</CanLogin>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
     <user id="289" parent="1" name="mysql.session">
+      <CanLogin>0</CanLogin>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
     <user id="290" parent="1" name="mysql.sys">
+      <CanLogin>0</CanLogin>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
     <user id="291" parent="1" name="root">
       <Host>localhost</Host>
     </user>
-    <table id="292" parent="275" name="order">
+    <table id="292" parent="277" name="goods">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
     <column id="293" parent="292" name="id">
-      <AutoIncrement>1</AutoIncrement>
-      <Comment>订单ID</Comment>
+      <AutoIncrement>3</AutoIncrement>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="294" parent="292" name="user_id">
-      <Comment>下单用户ID</Comment>
-      <DataType>bigint|0s</DataType>
+    <column id="294" parent="292" name="name">
+      <Comment>商品名</Comment>
+      <DataType>varchar(88)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="295" parent="292" name="enterprise_id">
-      <Comment>商家ID</Comment>
+    <column id="295" parent="292" name="stock">
+      <Comment>库存</Comment>
       <DataType>bigint|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="296" parent="292" name="product_id">
-      <Comment>商品ID</Comment>
-      <DataType>bigint|0s</DataType>
-      <NotNull>1</NotNull>
+    <column id="296" parent="292" name="price">
+      <Comment>价格</Comment>
+      <DataType>decimal(10,2 digit)|0s</DataType>
       <Position>4</Position>
     </column>
-    <column id="297" parent="292" name="status">
-      <Comment>订单状态</Comment>
-      <DataType>int|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-    </column>
-    <column id="298" parent="292" name="commodity_amount">
-      <Comment>商品金额</Comment>
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>6</Position>
-    </column>
-    <column id="299" parent="292" name="create_time">
-      <Comment>创建时间</Comment>
-      <DataType>datetime|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>7</Position>
-    </column>
-    <column id="300" parent="292" name="update_time">
-      <Comment>更新时间</Comment>
-      <DataType>datetime|0s</DataType>
-      <NotNull>1</NotNull>
-      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
-      <Position>8</Position>
-    </column>
-    <key id="301" parent="292" name="PRIMARY">
+    <index id="297" parent="292" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="298" parent="292" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
-      <UnderlyingIndexColNames>id</UnderlyingIndexColNames>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

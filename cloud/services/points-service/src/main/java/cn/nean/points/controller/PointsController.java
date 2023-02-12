@@ -23,4 +23,16 @@ public class PointsController {
         log.info("points: {}",points);
         return points;
     }
+
+    @GetMapping("/increase/{userId}/{points}")
+    public String increasePoints(@PathVariable Long userId,
+                                 @PathVariable Integer points){
+        int i = pointsMapper.increasePoints(userId, points);
+        if(i > 0){
+            log.info(userId + "  号用户增加积分   " + points + "成功!");
+            return "success";
+        }
+        log.info(userId + "  号用户增加积分   " + points + "失败!");
+        return "fail";
+    }
 }

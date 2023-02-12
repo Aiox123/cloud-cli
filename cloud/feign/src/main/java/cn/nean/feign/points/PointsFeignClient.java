@@ -18,4 +18,8 @@ public interface PointsFeignClient {
     @GetMapping("/query/{id}")
     Points queryPoints(@PathVariable Long id);
 
+
+    @GetMapping("/increase/{userId}/{points}")
+    String increasePoints(@PathVariable Long userId,
+                                 @PathVariable Integer points);
 }

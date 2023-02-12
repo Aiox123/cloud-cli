@@ -9,4 +9,10 @@ import org.springframework.stereotype.Repository;
 public interface PointsMapper extends BaseMapper<Points> {
 
     Points queryPointsById(@Param("id") Long id);
+
+    /*
+    * 增加积分
+    * */
+    int increasePoints(@Param("userId") Long userId,
+                       @Param("points") Integer points);
 }

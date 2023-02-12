@@ -27,8 +27,8 @@
             <option name="tableUIInfoList">
               <list>
                 <TableUIInfo>
-                  <option name="className" value="Points" />
-                  <option name="tableName" value="points" />
+                  <option name="className" value="Goods" />
+                  <option name="tableName" value="goods" />
                 </TableUIInfo>
               </list>
             </option>
