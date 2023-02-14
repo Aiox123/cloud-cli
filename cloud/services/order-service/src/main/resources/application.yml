@@ -18,6 +18,15 @@ spring:
       discovery:
         username: nacos
         password: nacos
+# seata 配置
+seata:
+  tx-service-group: my_group
+  service:
+    vgroup-mapping:
+      my_group: seata-server
+    grouplist:
+      seata-server: localhost:8091
+  enabled: true
 #日志级别、格式
 logging:
   level:

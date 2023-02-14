@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.concurrent.TimeUnit;
+
 @RestController
 @RequestMapping("/points")
 @Slf4j
@@ -26,8 +28,9 @@ public class PointsController {
 
     @GetMapping("/increase/{userId}/{points}")
     public String increasePoints(@PathVariable Long userId,
-                                 @PathVariable Integer points){
+                                 @PathVariable Integer points) throws InterruptedException {
         int i = pointsMapper.increasePoints(userId, points);
+        TimeUnit.SECONDS.sleep(3);
         if(i > 0){
             log.info(userId + "  号用户增加积分   " + points + "成功!");
             return "success";

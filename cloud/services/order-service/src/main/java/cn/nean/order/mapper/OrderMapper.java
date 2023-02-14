@@ -9,4 +9,9 @@ import org.springframework.stereotype.Repository;
 public interface OrderMapper extends BaseMapper<Order> {
 
     Order queryOrderById(@Param("id") Long id);
+
+    /*
+    * 生成订单
+    * */
+    int saveOrder(@Param("order") Order order);
 }
